@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <h1>プロジェクト</h1>
+            <div class="card neumorphism">
+                <div>本プロジェクトで利用する主要フォルダを以下に記載</div>
+
+                <ul>
+                    <li><a href="">プロジェクトTOP</a></li>
+                    <li><a href="">プロジェクト計画書</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <table class="neumorphic">
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Topic</th>
+              <th>Time</th>
+              <th>Location</th>
+              <th>Member</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>月</td>
+              <td>進捗確認・課題共有</td>
+              <td>13:00~14:00</td>
+              <td>三田ビル</td>
+              <td>NTT内部</td>
+            </tr>
+            <tr>
+              <td>火</td>
+              <td>成果物RV・課題共有</td>
+              <td>15:00~17:00</td>
+              <td>水道橋</td>
+              <td>JHF</td>
+            </tr>
+            <tr>
+              <td>水</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>木</td>
+              <td>成果物RV・課題共有</td>
+              <td>15:00~17:00</td>
+              <td>水道橋</td>
+              <td>JHF</td>
+            </tr>
+            <tr>
+              <td>金</td>
+              <td>進捗確認・課題共有</td>
+              <td>10:00~12:00</td>
+              <td>三田ビル目的</td>
+              <td>4社（）</td>
+            </tr>
+          </tbody>
+            </table>
+          </div>
+    </body>
+</html>
+
+<style>
+    html,
+    body{
+    height: 100%;
+    }
+
+    body {
+    margin: 0;
+    background: #e0e5ec;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    }
+
+    .neumorphism {
+    background-color: #e0e5ec;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+    }
+
+    .card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    table.neumorphic{
+    width: 600px;
+    border-spacing: 0;
+    color: #212121;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+    }
+    table.neumorphic thead{
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6);
+    }
+    table.neumorphic th{
+    padding: 7px;
+    }
+
+    table.neumorphic>tbody>tr>td {
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    }
+
+
+    table.neumorphic>tbody>tr:hover {
+    padding: 20px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+    }
+
+    table.neumorphic tr td:first-child::before {
+    content: "";
+    position: absolute;
+    padding: 7px;
+    top: 0;
+    left: -5000px;
+    width: 10000px;
+    height: 100%;
+    z-index: -10;
+    }
+
+    table.neumorphic td:hover::after {
+    content: "";
+    position: absolute;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+    }
+</style>
